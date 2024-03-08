@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>forms in html</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    </head>
+    <body>
+       <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required> <br>
+
+        <label for="email">Email:</label>
+        <input <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="Female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </fieldset>
+        
+
+       
+       <fieldset>
+        <legend>Choose your preferred payment method</legend><br>
+        <input type="radio" id="credit card" name="paymentmethod" value="creditcard">
+        <label for="creditcard">Credit Card</label><br>
+
+        <input type="radio" id="paypal" name="paymentmethod" value="paypal">
+        <label for="paypal">PayPal</label><br>
+
+        <input type="radio" id="bitcoin" name="paymentmethod" value="bitcoin">
+        <label for="bitcoin">Bitcoin</label><br>
+    </fieldset>
+       
+       <fieldset>
+        <legend>Interests</legend><br>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="creditcard">Music</label><br>
+
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="paypal">Sports</label>
+        <br>
+
+        <input type="checkbox" id="reading" name="interest" value="reading">
+        <label for="bitcoin">Reading</label><br>
+    </fieldset>
+        <fieldset>
+            <legend>Adress information</legend>
+            <!--Adress fields go here-->
+        </fieldset><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" aria-describedby="hint">
+        <div id="password-hint">
+            Password must be at least 8 characters long.
+        </div><br>
+        <button type="submit">Submit</button>
+       </form>
+        <br>
+        
+    </body>
+</html>
